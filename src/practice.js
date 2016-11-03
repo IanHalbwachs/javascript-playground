@@ -51,13 +51,13 @@ function nth(array, n) {
 // Returns a slice of array with n elements taken from the beginning.
 // take([1,2,3], 2) => [1, 2]
 function take(array, n) {
-
+	return array.slice(0, n);
 }
 
 // Returns a slice of array with n elements taken from the end.
 // takeRight([1,2,3,4,5], 3) => [3,4,5]
 function takeRight(array, n) {
-
+	return array.slice(-n);
 }
 
 // Returns an array containing all but the last element of array.
