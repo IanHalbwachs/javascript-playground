@@ -149,5 +149,9 @@ function fill(array, value, start, end) {
 // HINT: You've tried looping starting with index = 0, when happens if you start looping with index === end of array
 // reverse([1,2,3]) => [3,2,1];
 function reverse(array) {
-
+	var reversed = [];
+	for (var i = array.length-1; i >= 0; i -= 1) {
+		reversed.push(array[i]);
+	}
+	return reversed;
 }
