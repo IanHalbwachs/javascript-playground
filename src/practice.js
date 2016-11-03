@@ -42,7 +42,10 @@ function last(array) {
 
 // Returns the element at index n of array. If n is negative, the nth element from the end is returned.
 function nth(array, n) {
-
+	if (n < 0) {
+		n += array.length;
+	}
+	return array[n];
 }
 
 // Returns a slice of array with n elements taken from the beginning.
