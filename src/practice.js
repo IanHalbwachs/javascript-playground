@@ -121,7 +121,7 @@ function min(array) {
 // Returns the mean of the the array
 // mean([4, 2, 8, 6]) => 5
 function mean(array) {
-
+	return sum(array) / array.length;
 }
 
 // Fills elements of array with value from start up to, but not including, end.
@@ -132,7 +132,16 @@ function mean(array) {
 // fill([1,2,3], 'a', 1)  => [1, 'a', 'a']
 // fill([4, 6, 8, 10], '*', 1, 3) => [4, '*', '*', 10]
 function fill(array, value, start, end) {
-
+	if (start === undefined) {
+		start = 0;
+	}
+	if (end === undefined) {
+		end = array.length;
+	}
+	for (var i = start; i < end; i++) {
+		array[i] = value;
+	}
+	return array;
 }
 
 // Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.
