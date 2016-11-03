@@ -87,13 +87,29 @@ function sum(array) {
 // oddSum([10]) => 0
 // oddSum([11]) => 11
 function oddSum(array) {
-
+	var sum = 0
+	for (var i = 0; i < array.length; i++) {
+		if (isOdd(array[i])) {
+			sum += array[i];
+		}
+	}
+	return sum;
 }
 
 // Returns the largest number in the array
 // max([1,2,3]) => 3
-function max(array) {
 
+function max(array) {
+	if (array.length === 0) {
+		return;
+	}
+	var largest = -Infinity;
+	for (var i = 0; i < array.length; i++){
+		if (array[i] > largest) {
+			largest = array[i];
+		}
+	}
+	return largest;
 }
 
 // Returns the smallest number in the array
