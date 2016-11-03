@@ -11,7 +11,7 @@ function noop() {
 // identity(3) => 3
 // identity(null) => null
 function identity(item) {
-
+	return item;
 }
 
 // Returns whether N is odd;
