@@ -25,7 +25,7 @@ function isOdd(n) {
 // isEven(5) => false
 // isEven(6) => true
 function isEven(n) {
-
+	return !isOdd(n);
 }
 
 // Returns first item of an array
