@@ -75,7 +75,11 @@ function tail(array) {
 // Returns the sum of the numbers in array
 // sum([1,2,3]) => 6
 function sum(array) {
-
+	var sum = 0;
+	for (var i = 0; i < array.length; i++) {
+		sum += array[i];
+	}
+	return sum;
 }
 
 // Returns the sum of the odd values in array
