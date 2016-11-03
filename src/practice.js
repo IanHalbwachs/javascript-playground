@@ -115,7 +115,16 @@ function max(array) {
 // Returns the smallest number in the array
 // min([1,2,3]) => 1
 function min(array) {
-
+	if (array.length === 0) {
+		return
+	}
+	var smallest = Infinity;
+	for (var i = 0; i < array.length; i++){
+		if (array[i] < smallest) {
+			smallest = array[i];
+		}
+	}
+	return smallest;
 }
 
 // Returns the mean of the the array
