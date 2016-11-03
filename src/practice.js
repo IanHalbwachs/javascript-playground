@@ -31,7 +31,7 @@ function isEven(n) {
 // Returns first item of an array
 // head([1,2,3]) => 1
 function head(array) {
-
+	return array[0];
 }
 
 // Returns last item of an array
