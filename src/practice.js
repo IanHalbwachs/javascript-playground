@@ -37,7 +37,7 @@ function head(array) {
 // Returns last item of an array
 // last([1,2,3] => 3
 function last(array) {
-
+	return array[array.length-1];
 }
 
 // Returns the element at index n of array. If n is negative, the nth element from the end is returned.
