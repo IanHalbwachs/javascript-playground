@@ -63,7 +63,7 @@ function takeRight(array, n) {
 // Returns an array containing all but the last element of array.
 // initial([1,2,3]) => [1, 2]
 function initial(array) {
-
+	return array.slice(0, array.length-1);
 }
 
 // Similar to initial, except returns an array containing all but the first element of array.
