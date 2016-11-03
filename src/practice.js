@@ -18,7 +18,7 @@ function identity(item) {
 // isOdd(5) => true
 // isOdd(6) => false
 function isOdd(n) {
-
+	return n % 2 !== 0;
 }
 
 // Returns whether N is even;
