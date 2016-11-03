@@ -69,7 +69,7 @@ function initial(array) {
 // Similar to initial, except returns an array containing all but the first element of array.
 // tail([1, 2, 3]) => [2, 3]
 function tail(array) {
-
+	return array.slice(1);
 }
 
 // Returns the sum of the numbers in array
